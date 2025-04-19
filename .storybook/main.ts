@@ -9,7 +9,14 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: '@storybook/react-native-web-vite',
-    options: {},
+    options: {
+      pluginReactOptions: {
+        babel: {
+          presets: ['nativewind/babel'],
+        },
+        jsxImportSource: 'nativewind',
+      },
+    },
   },
 };
 export default config;

@@ -10,7 +10,7 @@ export type HeaderProps = {
 };
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
-  <View>
+  <View className="bg-blue-500">
     <View style={styles.wrapper}>
       <View style={styles.logoContainer}>
         <Text style={styles.h1}>Acme</Text>
